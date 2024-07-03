@@ -4,7 +4,7 @@ Welcome to my portfolio website repository!
 
 ## Overview
 
-This repository hosts the code for my portfolio website, which showcases my projects, skills, and experiences. You can view the live website [here](https://your-portfolio-website-url).
+This repository hosts the code for my portfolio website, which showcases my projects, skills, and experiences. You can view the live website [here](https://basavaadarsh.github.io/AdarshPortfolio/).
 
 ## Technologies Used
 
