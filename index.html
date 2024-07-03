@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AdarshPortfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+    <!-- Add class of bg-light to nav element -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AdarshPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Projects</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- main banner -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/containers/ -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/grid/ -->
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Hi, it's me Adarsh</h2>
+                <p class="hero_desc">I am a passionate software developer from Andhra Pradesh</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- about section -->
+    <section class="container mt-4 pt-4 section" id="about">
+        <h1 class="text-center">About Me</h1>
+        
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="images/about.jpg" class="image_about" alt="">
+            </div>
+
+            <div class="col-lg-6">
+                <p> As a fourth-year B.Tech student specializing in Artificial Intelligence and Machine Learning (AI/ML) within
+                    the Computer Science and Engineering (CSE) branch at Kalasalingam Academy of Research and Education,
+                    Beyond the classroom, I have actively participated in research projects and extracurricular activities that
+                    have broadened my knowledge and practical experience with AI/ML. From building intelligent systems to
+                    participating in hackathons.Below, I am providing my Skills.
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li class="bold-and-large" style="list-style: none; text-decoration: underline;"><strong style="font-size: 1.2em;">Programming Languages</strong></li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li class="bold-and-large" style="list-style: none; text-decoration: underline;"><strong style="font-size: 1.2em;">Web Development</strong></li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript (including frameworks like React or Vue.js)</li>
+                            <li>Django</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <h2 class="text-right">Project Ideas</h2>
+                    <p> We have created innovative approaches with a significant impact 
+                        through creative projects meant to improve accessibility.
+                        Every project we work on reflects our dedication to creativity and enhancing people's lives through technology. 
+                        Below, I am providing my resume and GitHub profile, along with my projects focused on machine learning. 
+                        Please review these to learn more about my professional background and expertise.
+                    </p>
+                    <body>
+                        <section class="resume" id="Resume">
+                            <div class="resume-content">
+                                <div class="content-item">
+                                    <h1 class="text-center">Resume</h1>
+                                    <button class="resume-button" onclick="openResume()">View My Resume</button>
+                                </div>
+                                <div class="content-item">
+                                    <h1 class="text-center">GitHub</h1>
+                                    <button class="resume-button" onclick="openGitHub()">GitHub Profile</button>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <script>
+                            function openResume() {
+                                window.open('Adarsh Resume.pdf', '_blank');
+                            }
+                            
+                            function openGitHub() {
+                                window.open('https://github.com/basavaadarsh', '_blank');
+                            }
+                        </script>
+                    </body>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- services section-->
+    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
+    <section class="container section" id="services">
+        <h1 class="text-center">Projects</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText" id="card-container1">
+                    <div class="card-body" >
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Health Tracker</h4>
+                        <p class="card-text mt-3">"Health-Tracker"  is  a  complete  programme  that  aims  tosimplify wellness management. 
+                            Users may easily track theirdaily  water  intake,  activity  duration,  and  blood  pressure,allowing them to take control of their health with ease.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <script>
+                document.getElementById('card-container1').addEventListener('click', function() {
+                    window.location.href = "https://github.com/basavaadarsh/Health-Tracker";
+                });
+            </script>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText" id="card-container2">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Heart Failure Prediction</h4>
+                        <p class="card-text mt-3">The Heart Failure Prediction project uses Python machinelearning algorithms to analyse medical data and forecastpatients' chances of developing heart failure.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <script>
+                document.getElementById('card-container2').addEventListener('click', function() {
+                    window.location.href = "https://github.com/basavaadarsh/Text-Embedded-From-Image-to-speech-Conversion";
+                });
+            </script>
+
+            
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText" id="card-container3">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Text Embedded Image to Speech Conversion</h4>
+                        <p class="card-text mt-3">
+                            Text Embedded Image to Speech Conversion project centered around the development of an 
+                            image-to-speech conversion system based on textual content extracted from images.
+                            This endeavor has afforded me valuable experience in project management.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        
+            <script>
+                document.getElementById('card-container3').addEventListener('click', function() {
+                    window.location.href = "https://github.com/basavaadarsh/Text-Embedded-From-Image-to-speech-Conversion";
+                });
+            </script>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">Madical Image Analysis</h4>
+                        <p class="card-text mt-3">Medical Image Analysis involves using advanced algorithms and techniques to interpret and extract valuable insights from medical images. 
+                            This project aims to enhance diagnostic accuracy and improve patient care through automated image processing
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">Virtual Mouse Using Machine Learning</h4>
+                        <p class="card-text mt-3">Virtual Mouse with Machine Learning uses machine learning techniques to control cursor motions and mouse operations. 
+                            The goal of this project is to leverage hand gestures and movements to produce a touch-free and user-friendly interface.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">Stock Market Prediction</h4>
+                        <p class="card-text mt-3">Stock Market Prediction involves utilizing statistical models, machine learning algorithms, 
+                            and financial data analysis to forecast future movements in stock prices. This field aims to 
+                            provide insights into market trends, optimize investment strategies, and mitigate risks by leveraging historical data and predictive analytics
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- contact section-->
+    <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map go to https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                    <div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Ongole,Andhre+pradesh+,+india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="google-map-html" href="https://www.bootstrapskins.com/themes" id="make-map-infor-mation">premium bootstrap themes</a>
+                    <style>#google-maps-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- footer section-->
+    <footer class="container-fluid footer" id="footer">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </footer>
+    
+
+    <!-- load javascript after loading all html content -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
